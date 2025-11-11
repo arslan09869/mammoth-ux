@@ -70,7 +70,7 @@ drop-shadow-[0_2px_2px_rgba(255,255,255,0.5)]`}
         </div>
       </div>
 
-      <section className="relative z-20 w-full px-6 sm:px-12 lg:px-24 py-32 space-y-20">
+      <section className="relative z-20 w-full px-6 sm:px-12 lg:px-24 py-3 sm:py-16 space-y-20">
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           {/* Left Text */}
           <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
@@ -129,7 +129,7 @@ drop-shadow-[0_2px_2px_rgba(255,255,255,0.5)]`}
             <FAQSection />
           </div>
         </div>
-        <div className="w-full mt-10 px-4">
+        <div className="w-full mt-10">
           <Footer />
         </div>
       </section>

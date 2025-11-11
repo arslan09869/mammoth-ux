@@ -4,8 +4,8 @@ import { Sniglet } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Penguin UI Components",
-  description: "Cool UI Components with Penguin Style",
+  title: "Mammoth UX Forge Components",
+  description: "Cool UI Components with Mammoth Style",
 };
 
 // ✅ Initialize the Google font
