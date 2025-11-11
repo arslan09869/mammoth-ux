@@ -104,6 +104,34 @@ export function NavbarDemo() {
                 <span className="block">{item.name}</span>
               </a>
             ))}
+            <button
+              onClick={() => setTheme(isDark ? "light" : "dark")}
+              className="rounded-full transition-all duration-300 hover:bg-black/10"
+            >
+              <AnimatePresence mode="wait" initial={false}>
+                {isDark ? (
+                  <motion.div
+                    key="moon"
+                    initial={{ rotate: -90, opacity: 0 }}
+                    animate={{ rotate: 0, opacity: 1 }}
+                    exit={{ rotate: 90, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Moon size={18} className="text-gray-100" />
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    key="sun"
+                    initial={{ rotate: 90, opacity: 0 }}
+                    animate={{ rotate: 0, opacity: 1 }}
+                    exit={{ rotate: -90, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Sun size={18} className="text-gray-800" />
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </button>
             <div className="flex w-full flex-col gap-4">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
